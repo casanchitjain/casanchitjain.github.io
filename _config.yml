@@ -88,8 +88,10 @@ publication_category:
     title: 'Books'
   manuscripts:
     title: 'Journal Articles'
-  casess:
+  cases:
     title: 'Teaching Cases'
+  working:
+    title: 'Working Papers'
   conferences:
     title: 'Conference Papers'
 
