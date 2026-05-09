@@ -1,6 +1,7 @@
 ---
 title: "smallcase – A Disruptive Business Model in India"
 collection: publications
+category: cases
 permalink: /publication/smallcase
 date: 2025-10-01
 venue: "Harvard Business Publishing for Education"
