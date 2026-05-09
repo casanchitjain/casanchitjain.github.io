@@ -73,10 +73,6 @@
       </p>
     {% endif %}
 
-    {% if post.authors %}
-      <p><strong>{{ post.authors }}</strong></p>
-    {% endif %}
-
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
