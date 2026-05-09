@@ -2,7 +2,8 @@
 title: "Contagion Effects of Equity Financing Announcements Within Business Groups"
 collection: publications
 category: working
-permalink: /publication/contagion-effects
+authors: Douglas CUmming, Sanchit Jain, Vrun Jindal
+permalink: /publication/wp-contagion-effects
 excerpt: 'Spillover impact of equity financiang announcement by a business-group affiliated firm on the value of other firms in the group'
 date: 2026-05-01
 venue: 
