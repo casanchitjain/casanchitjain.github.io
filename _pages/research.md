@@ -29,10 +29,10 @@ My current and future research focuses on three broad themes:
         {% continue %}
       {% endif %}
       {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2>
-        <hr />
-        {% assign title_shown = true %}
-      {% endunless %}
+      ## {{ category[1].title }}
+      
+   {% assign title_shown = true %}
+     {% endunless %}
       {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
     {% endfor %}
   {% endfor %}
