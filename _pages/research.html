@@ -7,11 +7,11 @@ author_profile: true
 
 My research examines how institutional design shapes the behaviour of firms, intermediaries, and investors in financial markets, with a particular focus on India. I study questions in corporate finance, financial intermediation, and regulatory design using event studies, difference-in-differences designs, quasi-natural experiments, panel regressions, and AI-assisted text analysis.
 
-The unifying question in my work is: **How does the institutional environment affect economic decisions, and what are the consequences for market efficiency and investor welfare?**
+The unifying question in my work is: How does the institutional environment affect economic decisions, and what are the consequences for market efficiency and investor welfare?
 
 {% include base_path %}
 
-<!-- Render publications by category, but suppress abstracts/excerpts -->
+<!-- Render publications by category, suppress abstracts, citations, and links -->
 {% if site.publication_category %}
   {% for category in site.publication_category %}
     {% assign title_shown = false %}
@@ -24,14 +24,15 @@ The unifying question in my work is: **How does the institutional environment af
         <hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html show_excerpt=false %}
+      {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html show_excerpt=false %}
+    {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
   {% endfor %}
 {% endif %}
+
 
 ## Future Research Agenda
 
