@@ -5,21 +5,15 @@ permalink: /research/
 author_profile: true
 ---
 
-My research examines how regulatory and organizational institutions shape the behavior of firms, intermediaries, and investors in financial markets, with a particular focus on India.
-
-I study questions in corporate finance, financial intermediation, and regulatory design using quasi-experimental methods, panel regressions, and computational text analysis.
-
-The central question in my work is how institutional arrangements influence economic decisions and, in turn, affect market efficiency and investor welfare.
-
-## Research Agenda
+My research examines how regulatory and organizational institutions shape the behavior of firms, financial intermediaries, and investors, with a particular focus on India. My primary research area is mutual funds and delegated asset management. I study how compensation structures, distribution incentives, and regulatory interventions affect capital allocation and investor welfare. More broadly, I work in corporate finance, financial intermediation, and law and finance using quasi-experimental methods, panel regressions, and computational text analysis. The central question in my work is how institutional design influences economic decisions and, in turn, affects market efficiency and investor welfare.
 
 My current and future research focuses on three broad themes:
 
 1. **Regulatory Design and Investor Welfare**  
-   Examining how interventions by SEBI affect mutual fund managers, distributors, and retail investors.
+   Examining how SEBI regulations affect mutual fund managers, distributors, and retail investors.
 
 2. **Information Transmission in Organizational Networks**  
-   Studying how financing decisions, disclosures, and regulatory actions generate spillover effects across affiliated firms.
+   Studying how financing decisions, disclosures, and legal institutions generate spillover effects across affiliated firms and markets.
 
 3. **Computational Text Analysis in Finance**  
    Using large language models to extract structured information from financial news, legal judgments, and regulatory disclosures.
