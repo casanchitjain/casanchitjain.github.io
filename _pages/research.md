@@ -5,23 +5,24 @@ permalink: /research/
 author_profile: true
 ---
 
-My research examines how institutional design shapes the behaviour of firms, intermediaries, and investors in financial markets, with a particular focus on India. I study questions in corporate finance, financial intermediation, and regulatory design using event studies, difference-in-differences designs, quasi-natural experiments, panel regressions, and AI-assisted text analysis.
+My research examines how regulatory and organizational institutions shape the behavior of firms, intermediaries, and investors in financial markets, with a particular focus on India.
 
-The unifying question in my work is: How does the institutional environment affect economic decisions, and what are the consequences for market efficiency and investor welfare?
+I study questions in corporate finance, financial intermediation, and regulatory design using quasi-experimental methods, panel regressions, and computational text analysis.
 
-## Future Research Agenda
+The central question in my work is how institutional arrangements influence economic decisions and, in turn, affect market efficiency and investor welfare.
 
-My future research focuses on three broad themes:
+## Research Agenda
+
+My current and future research focuses on three broad themes:
 
 1. **Regulatory Design and Investor Welfare**  
-   Examining how regulatory interventions by SEBI affect fund managers, distributors, and retail investors.
+   Examining how interventions by SEBI affect mutual fund managers, distributors, and retail investors.
 
 2. **Information Transmission in Organizational Networks**  
-   Studying how financing decisions and disclosures generate spillover effects across affiliated firms.
+   Studying how financing decisions, disclosures, and regulatory actions generate spillover effects across affiliated firms.
 
-3. **AI-Assisted Text Analysis in Finance**  
+3. **Computational Text Analysis in Finance**  
    Using large language models to extract structured information from financial news, legal judgments, and regulatory disclosures.
-
 
 {% include base_path %}
 
