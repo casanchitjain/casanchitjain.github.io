@@ -1,5 +1,5 @@
 ---
-title: "Financial Reporting and Analysis"
+title: "Accounting Tutorial, Executive Program"
 collection: teaching
 type: "Instructor"
 permalink: /teaching/epgp-financial-reporting
