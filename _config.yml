@@ -26,11 +26,11 @@ author:
   avatar           : "profile.png"
   name             : "Sanchit Jain"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate in Finance & Accounting at IIM Bangalore. Research interests include corporate finance, financial intermediation, mutual funds, regulatory design, and text analysis"
-  location         : "Bengaluru, India"
-  employer         : "Indian Institute of Management Bangalore"
+  bio              : "PhD Candidate in Finance & Accounting at IIM Bangalore"
+  location         : # "Bengaluru, India"
+  employer         : # "Indian Institute of Management Bangalore"
   uri              : # URL
-  email            : "sanchit.jain21@iimb.ac.in" 
+  email            : # "sanchit.jain21@iimb.ac.in" 
 
   # Academic websites
   academia         : # URL
