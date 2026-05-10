@@ -12,6 +12,7 @@ paperurl: "https://doi.org/10.1002/fut.70078"
 
 
 
-ABSTRACT
+
+## ABSTRACT
 
 Using options-implied equity risk premium, this study examines how financial markets price the uncertainty associated with the energy-related discussions in Federal Reserve speeches. The study quantifies key aspects of such discussions and examines their impact on the equity risk premium and market volatility. Our findings demonstrate that the proportion of energy-related content in Fed speeches is positively associated with both ERP and market volatility. We uncover that a dovish tone in these discussions mitigates the uncertainty surrounding energy-related concerns and reduces market volatility. These findings highlight the importance of energy-related communication in Fed speeches—an understudied channel of Fed communication.
