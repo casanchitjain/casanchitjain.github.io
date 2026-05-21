@@ -28,11 +28,11 @@ My current and future research focuses on three broad themes:
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
-      {% unless title_shown %}
-      ## {{ category[1].title }}
       
-   {% assign title_shown = true %}
-     {% endunless %}
+{% unless title_shown %}
+<h2>{{ category[1].title }}</h2>
+{% assign title_shown = true %}
+{% endunless %}
       {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
     {% endfor %}
   {% endfor %}
