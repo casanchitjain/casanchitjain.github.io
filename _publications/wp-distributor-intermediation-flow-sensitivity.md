@@ -10,3 +10,7 @@ venue: "Completed draft, targeting a top finance journal"
 paperurl: ""
 citation: 
 ---
+
+## Presented at:
+
+- *Jun 2026* – [Research Symposium on Finance and Economics (RSFE 2026)](https://krea.edu.in/ifmrgsb/research-symposium-finance-and-economics/), organized by IFMR GSB, Krea University

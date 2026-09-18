@@ -22,6 +22,7 @@ Keywords: Business groups, Contagion effects, Equity issues, Financing decisions
 
 ## Presented at:
 
+- *Jun 2026* – [Research Symposium on Finance and Economics (RSFE 2026)](https://krea.edu.in/ifmrgsb/research-symposium-finance-and-economics/), organized by IFMR GSB, Krea University
 - *Dec 2025* – [Australasian Finance & Banking Conference](https://www.unsw.edu.au/business/our-schools/banking-finance/seminars-workshops/australasian-finance-banking-conference), organised by the Institute of Global Finance, UNSW Business School
 - *Dec 2025* – [The Sydney Banking and Financial Stability Conference (SBFC)](https://sbfc.sydney.edu.au/), organized by the University of Sydney Business School, Sydney, Australia
 - *Dec 2025* – [India Management Research Conference (IMRC 2025)](https://conference.iima.ac.in/imrc2025/), organized by IIM Ahmedabad
