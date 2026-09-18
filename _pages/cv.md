@@ -38,7 +38,6 @@ Outreach & Financial Education
 ======
 
 - Personal Finance Trainer, Finance ke Funde Academy (2018–present) — pro-bono personal finance workshops and training sessions
-- Financial Wellness Program Facilitator, Swiss Consulate, Bangalore (Jan–Jun 2024) — [Letter of appreciation](/files/letter-swiss-consulate-2024.pdf)
 - Mutual Funds Product Training Sessions, ICICI Prudential AMC (2017–2019)
 - Academic/Career Counselor, Institute of Chartered Accountants of India (2017–present)
 
@@ -67,15 +66,24 @@ Skills
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
+    {% if post.category != 'working' %}
+      {% include archive-single-cv.html %}
+    {% endif %}
+  {% endfor %}</ul>
+
+Working Papers
+======
+  <ul>{% for post in site.publications reversed %}
+    {% if post.category == 'working' %}
+      {% include archive-single-cv.html %}
+    {% endif %}
   {% endfor %}</ul>
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
+
+- Financial Wellness Program, Swiss Consulate, Bangalore (Jan–Jun 2024) — [Letter of appreciation](/files/letter-swiss-consulate-2024.pdf)
+
 Teaching
 ======
   <ul>{% for post in site.teaching reversed %}
