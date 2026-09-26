@@ -1,0 +1,12 @@
+# Normalise line endings so Mac and Windows checkouts do not show whole-file diffs
+* text=auto
+
+# Binary files: never convert
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.rds binary
+*.RData binary
+*.xlsx binary
+*.docx binary
