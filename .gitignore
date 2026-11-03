@@ -24,3 +24,7 @@ package-lock.json
 
 # Personal reference files (CV source, etc.) - never publish these
 /cv-source/
+
+# Local-only files
+.Rhistory
+CLAUDE.md
