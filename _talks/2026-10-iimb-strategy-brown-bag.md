@@ -10,4 +10,4 @@ location: "Bengaluru, India"
 
 Joint talk with Divyam Jain (IIM Ranchi).
 
-[Download select slides (PDF)](/files/Jain-Jain_Strategy-Finance_IIMB-BrownBag_Oct2026_SelectSlides.pdf)
+[Download select slides (PDF)](/files/Strategy-Finance_IIMB-BrownBag_Oct2026_SelectSlides.pdf)
