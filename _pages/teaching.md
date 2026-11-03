@@ -24,3 +24,8 @@ My industry experience in asset management and wealth management allows me to co
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+## Other teaching roles
+
+- **Valuation Lab (8-week workshop)**, Amrut Mody School of Management, Ahmedabad University, Oct–Dec 2026
+- **Teaching Assistant**, Indian Institute of Management Bangalore, Jun 2023 – Dec 2024: Accounting for Decisions (PGP I), Corporate Finance (PGP I), Fixed Income Securities & its Derivatives (PGP II)

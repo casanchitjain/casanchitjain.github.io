@@ -14,4 +14,13 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
 
+{% if page.collection == 'publications' %}
+<meta name="citation_title" content="{{ page.title | escape }}">
+{% assign cite_authors = page.authors | split: ', and ' | join: ', ' | split: ' and ' | join: ', ' | split: ', ' %}
+{% for a in cite_authors %}<meta name="citation_author" content="{{ a | strip | escape }}">
+{% endfor %}
+{% if page.date %}<meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">{% endif %}
+{% if page.category == 'manuscripts' and page.venue %}<meta name="citation_journal_title" content="{{ page.venue | escape }}">{% endif %}
+{% endif %}
+
 <!-- end custom head snippets -->

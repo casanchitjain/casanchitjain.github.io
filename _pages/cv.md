@@ -50,6 +50,7 @@ Professional Service
 
 - Discussant: RSFE 2025
 - Conference Reviewer: ICGS Conference 2024
+- Case Reviewer: Asian Journal of Management Cases (Nov 2026)
 - Capstone Projects: supervised 2 capstone projects, 2026–27, Amrut Mody School of Management, Ahmedabad University
 
 Outreach & Financial Education

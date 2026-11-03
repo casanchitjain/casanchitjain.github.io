@@ -14,3 +14,7 @@ My research lies at the intersection of corporate finance, financial intermediat
 Prior to joining academia, I worked in the asset management and wealth management industry, including roles at Batlivala & Karani and ICICI Prudential Asset Management Company. I am also a Chartered Accountant and have completed CFA Level I.
 
 **Research Interests:** Corporate Finance, Financial Intermediation, Mutual Funds, Regulatory Design, Text Analysis
+
+**Contact:** sanchit.jain [at] ahduni.edu.in · [Faculty page, Ahmedabad University](https://ahduni.edu.in/faculty/sanchit-jain/)
+
+<small>Last updated: {{ site.time | date: "%B %Y" }}</small>

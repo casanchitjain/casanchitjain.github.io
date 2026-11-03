@@ -49,6 +49,10 @@
       {% if post.authors %}
         <p><strong>{{ post.authors }}</strong></p>
       {% endif %}
+
+      {% if post.paperurl and post.paperurl != "" and include.show_links == false %}
+        <p>{% if post.paperurl contains '](' %}{{ post.paperurl | markdownify | remove: '<p>' | remove: '</p>' }}{% else %}<a href="{{ post.paperurl }}">Link to paper</a>{% endif %}</p>
+      {% endif %}
     
       {% unless post.category == 'working' %}
         {% if post.venue and post.date %}
