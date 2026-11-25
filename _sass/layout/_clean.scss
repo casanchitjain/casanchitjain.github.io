@@ -219,6 +219,21 @@ body .archive__item {
 .page__footer {
   background: transparent;
   font-size: 0.85rem;
+
+  > footer {
+    max-width: $clean-width;
+    margin: 0 auto;
+    padding: 1.5em 24px;
+  }
+}
+
+/* Paper pages: only the author's own name is bold, links are plain */
+.paper-byline {
+  margin: 0 0 0.6rem;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 /* Previous / Next pager */

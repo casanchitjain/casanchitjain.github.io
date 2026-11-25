@@ -44,7 +44,7 @@ layout: default
 {% elsif page.collection == 'publications' %}
 
   {% if page.authors %}
-    <p><strong>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong>{% if page.alphabetical %} <span class="author-order">(lexicographic order)</span>{% endif %}</p>
+    <p class="paper-byline">{{ page.authors | replace: "Sanchit Jain", "**Sanchit Jain**" | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if page.alphabetical %} <span class="author-order">(lexicographic order)</span>{% endif %}</p>
   {% endif %}
 
   {% unless page.category == 'working' %}
