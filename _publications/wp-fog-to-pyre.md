@@ -2,7 +2,8 @@
 title: "Fog to Pyre: The Impact of Supreme Court Judgment Complexity on Dowry Deaths"
 collection: publications
 category: working
-authors: "[Sheetal Sekhri](https://irc.virginia.edu/people/sheetal-sekhri), [Abhinav Anand](https://www.iimk.ac.in/faculty-profiles/abhinavanand), [Jalaj Pathak](https://www.iiml.ac.in/faculty-data?n=MTM2), and Sanchit Jain"
+authors: "[Abhinav Anand](https://www.iimk.ac.in/faculty-profiles/abhinavanand), Sanchit Jain, [Jalaj Pathak](https://www.iiml.ac.in/faculty-data?n=MTM2), and [Sheetal Sekhri](https://irc.virginia.edu/people/sheetal-sekhri)"
+alphabetical: true
 permalink: /publication/wp-fog-to-pyre-the-impact-of-supreme-court-judgment-complexity-on-dowry-deaths
 excerpt: "This paper investigates whether the linguistic complexity of Supreme Court judgments affects dowry death outcomes in India."
 date: 2026-04-01
@@ -17,7 +18,17 @@ header:
 
 
 
-## Presented at:
+## Presented at
+
+<div class="presented">
+<div class="presented__years">
+  <b>2024</b><span><a href="https://krea.edu.in/ifmrgsb/research-symposium-finance-and-economics/" title="Research Symposium on Finance and Economics (RSFE) (Jun 2024), organised by IFMR GSB, Krea University">RSFE</a> · <a href="https://warwick.ac.uk/fac/soc/economics/research/centres/cage/events/15-04-24-7th_monash_warwick_zurich_text_as_data_workshop/" title="7th Monash-Warwick-Zurich Text-as-Data Workshop (Apr 2024), organized by Monash University, the University of Warwick, and ETH Zurich's Center for Law & Economics">Monash-Warwick-Zurich</a></span>
+</div>
+<details class="presented__full" markdown="1">
+<summary><span class="show">Show details +</span><span class="hide">Hide details &minus;</span></summary>
 
 - *Jun 2024* – [Research Symposium on Finance and Economics (RSFE)](https://krea.edu.in/ifmrgsb/research-symposium-finance-and-economics/), organised by IFMR GSB, Krea University
 - *Apr 2024* – [7th Monash-Warwick-Zurich Text-as-Data Workshop](https://warwick.ac.uk/fac/soc/economics/research/centres/cage/events/15-04-24-7th_monash_warwick_zurich_text_as_data_workshop/), organized by Monash University, the University of Warwick, and ETH Zurich's Center for Law & Economics
+
+</details>
+</div>

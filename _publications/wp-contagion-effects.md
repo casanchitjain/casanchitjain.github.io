@@ -4,6 +4,7 @@ selected: true
 collection: publications
 category: working
 authors: "[Douglas Cumming](https://www.stevens.edu/school-business/faculty), Sanchit Jain, [Varun Jindal](https://www.iimb.ac.in/user/199/varun-jindal)"
+alphabetical: true
 permalink: /publication/wp-contagion-effects
 excerpt: 'Spillover impact of equity financing announcement by a business-group affiliated firm on the value of other firms in the group'
 date: 2026-05-01
