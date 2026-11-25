@@ -43,6 +43,8 @@
         {{ post.type }}, <i>{{ post.venue }}</i>,
         {{ post.date | default: "1900-01-01" | date: "%Y" }}
       </p>
+      {% if post.excerpt %}<p class="course-desc">{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+      {% if post.rating %}<p class="course-rating">Overall teaching rating: {{ post.rating }}</p>{% endif %}
     
     {% elsif post.collection == 'publications' %}
 
@@ -89,7 +91,7 @@
       </p>
     {% endif %}
 
-    {% if include.show_excerpt != false %}
+    {% if include.show_excerpt != false and post.collection != 'teaching' %}
   {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">
       {{ post.excerpt | markdownify }}

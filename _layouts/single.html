@@ -39,6 +39,7 @@ layout: default
     {{ page.type }}, <i>{{ page.venue }}</i>,
     {{ page.date | default: "1900-01-01" | date: "%Y" }}
   </p>
+  {% if page.rating %}<p class="course-rating">Overall teaching rating: {{ page.rating }}</p>{% endif %}
 
 {% elsif page.collection == 'publications' %}
 
