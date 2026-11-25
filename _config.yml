@@ -147,14 +147,19 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : share-card.png
+og_description           : Sanchit Jain, Assistant Professor at Ahmedabad University. Research on mutual funds, business groups, regulatory design and text analysis in finance.
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : Sanchit Jain
+  links:
+    - https://scholar.google.com/citations?user=PTLxJsEAAAAJ
+    - https://orcid.org/0000-0003-0674-5436
+    - https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=4748731
+    - https://www.linkedin.com/in/jainsanchit
+    - https://github.com/casanchitjain
 
 
 # Analytics
