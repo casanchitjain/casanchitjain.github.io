@@ -43,7 +43,7 @@ layout: default
 {% elsif page.collection == 'publications' %}
 
   {% if page.authors %}
-    <p><strong>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong></p>
+    <p><strong>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong>{% if page.alphabetical %}<br /><span class="author-order">Authors listed in alphabetical order</span>{% endif %}</p>
   {% endif %}
 
   {% unless page.category == 'working' %}

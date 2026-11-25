@@ -47,7 +47,7 @@
     {% elsif post.collection == 'publications' %}
 
       {% if post.authors %}
-        <p class="paper-authors">{{ post.authors | replace: "Sanchit Jain", "**Sanchit Jain**" | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+        <p class="paper-authors">{{ post.authors | replace: "Sanchit Jain", "**Sanchit Jain**" | markdownify | remove: "<p>" | remove: "</p>" }}{% if post.alphabetical %} <span class="author-order">(alphabetical order)</span>{% endif %}</p>
       {% endif %}
 
       {% unless post.category == 'working' %}
