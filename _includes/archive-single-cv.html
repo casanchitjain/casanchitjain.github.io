@@ -1,43 +1,6 @@
-{% include base_path %}
-
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
-
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    <li>
-    {% if include.type == "grid" and teaser %}
-      <div class="archive__item-teaser">
-        <img src=
-          {% if teaser contains "://" %}
-            "{{ teaser }}"
-          {% else %}
-            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
-          {% endif %}
-          alt="">
-      </div>
-    {% endif %}
-    <h3 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
-      {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
-      {% endif %}
-    </h3>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.citation and post.citation != '' %}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p>
-    {% elsif post.authors %}<p class="archive__item-excerpt" itemprop="description">{{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if post.alphabetical %} <span class="author-order">(lexicographic order)</span>{% endif %}</p>{% endif %}
-    </li>
- </article>
-</div>
+{% include base_path %}{% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}<li class="cv-entry">
+  <a class="cv-entry__title" href="{{ base_path }}{{ post.url }}">{{ title }}</a>
+  {% if post.collection == 'teaching' %}<span class="cv-entry__meta">{{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}</span>
+  {% elsif post.citation and post.citation != '' %}<span class="cv-entry__meta">{{ post.citation }}</span>
+  {% elsif post.authors %}<span class="cv-entry__meta">{{ post.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% if post.alphabetical %} <span class="author-order">(lexicographic order)</span>{% endif %}</span>{% endif %}
+</li>

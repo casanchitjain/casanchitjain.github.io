@@ -477,3 +477,47 @@ body .archive__item {
     white-space: normal;
   }
 }
+
+/* CV: light, consistent entries for publications, talks and teaching */
+.cv-entries {
+  margin: 0.6rem 0 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.cv-entry {
+  margin: 0 0 0.9rem;
+  padding: 0;
+}
+
+.cv-entry__title,
+.cv-entry__meta {
+  display: block;
+}
+
+.cv-entry__title {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+a.cv-entry__title {
+  text-decoration: none;
+}
+
+.cv-entry__title--plain {
+  color: var(--global-text-color);
+}
+
+.cv-entry__meta {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+
+  a {
+    text-decoration: none;
+  }
+}
