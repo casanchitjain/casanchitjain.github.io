@@ -16,8 +16,11 @@ header:
   og_image: share-distributor.png
 ---
 
-## Presented at:
+<details class="presented" markdown="1">
+<summary>Presented at (3)</summary>
 
 - *Dec 2026* – [Emerging Markets Conference (EMC) 2026](https://www.emergingmarketsconference.org/), organised by the XKDR Forum in collaboration with Vanderbilt Law School (accepted for presentation)
 - *Dec 2026* – [India Management Research Conference (IMRC 2026)](https://conference.iima.ac.in/), organized by IIM Ahmedabad (accepted for oral presentation)
 - *Jun 2026* – [Research Symposium on Finance and Economics (RSFE 2026)](https://krea.edu.in/ifmrgsb/research-symposium-finance-and-economics/), organized by IFMR GSB, Krea University
+
+</details>
