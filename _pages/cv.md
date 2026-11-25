@@ -9,12 +9,14 @@ redirect_from:
 
 {% include base_path %}
 
-## Academic Positions
-
+<details class="research-section" open markdown="1">
+<summary>Academic Positions</summary>
 - **Assistant Professor**, Ahmedabad University (July 2026–present)
 
-## Education
+</details>
 
+<details class="research-section" open markdown="1">
+<summary>Education</summary>
 - **Indian Institute of Management Bangalore**  
   PhD in Finance and Accounting, 2021–2026
 
@@ -27,21 +29,30 @@ redirect_from:
 - **Ahmedabad University**  
   Bachelor of Commerce, 2014
 
-## Corporate experience
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Corporate experience</summary>
 - Senior Product Manager, Wealth, Batlivala & Karani (May 2019 – Jun 2021)
 - Product Specialist, ICICI Prudential Asset Management Company (Sep 2017 – May 2019)
 - Transaction Advisory Analyst, Corporate Catalyst India (Sep 2015 – Feb 2016)
 - Article Assistant, Assurance, ASA & Associates LLP (Aug 2013 – Sep 2015)
 - Article Assistant, Assurance, S.R. Batliboi & Associates LLP (EY) (Aug 2012 – Aug 2013)
 
-## Scholarships & Awards
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Scholarships & Awards</summary>
 - Content Award, FinX Institute (CIEL) (Sep 2026)
 - Florintree Scholarship Award, IIM Bangalore (2025–26)
 - Best Research Paper Award in Finance, First Prize, Corporate Finance, RSFE Conference (Jun 2025)
 - Mirae Asset Scholar Award, IIM Bangalore (2024–25)
 - Stunning Debutant Award, ICICI Prudential AMC Ltd (Apr 2018)
 
-## Professional Service
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Professional Service</summary>
 - Discussant: RSFE 2025
 - Conference Reviewer: ICGS Conference 2024
 - Case Reviewer: Asian Journal of Management Cases (Nov 2026)
@@ -49,56 +60,60 @@ redirect_from:
   - *AI-Driven Commodity and Purchase-Timing Intelligence for Manufacturing Procurement*
   - *From Traditional Stockbroking to Digital Investment Apps: Investor Behaviour in India*
 
-## Outreach & Financial Education
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Outreach & Financial Education</summary>
 - Financial Wellness Program Facilitator, Switzerland Consulate, Bangalore (Jan–Jun 2024) — pro-bono workshops for support staff — [Letter of appreciation](/files/letter-swiss-consulate-2024.pdf)
 - Personal Finance Training, Finance ke Funde Academy (2018–present) — pro-bono personal finance workshops
 - Mutual Funds Product Training Sessions, ICICI Prudential AMC (2017–2019)
 - Academic/Career Counselor, Institute of Chartered Accountants of India (2017–present)
 
-  
-## Skills
-### Programming
-- R
-- Python
-- LaTeX
+</details>
 
-### Databases
-- CRSP
-- Compustat
-- CMIE Prowess
-- PRIME Mutual Funds
-- Morningstar
-- Bloomberg
+<details class="research-section" markdown="1">
+<summary>Skills</summary>
+- **Programming:** R, Python, LaTeX
+- **Datasets:** CRSP, Compustat, CMIE Prowess, PRIME Mutual Funds, Morningstar, Bloomberg
+- **Languages:** English, Hindi, Gujarati (elementary)
 
-### Languages
-- English
-- Hindi
-- Gujarati (elementary)
+</details>
 
-
-## Publications
-  <ul>{% for post in site.publications reversed %}
+<details class="research-section" open markdown="1">
+<summary>Publications</summary>
+<ul>{% for post in site.publications reversed %}
     {% if post.category != 'working' %}
       {% include archive-single-cv.html %}
     {% endif %}
   {% endfor %}</ul>
 
-## Working Papers
-  <ul>{% for post in site.publications reversed %}
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Working Papers</summary>
+<ul>{% for post in site.publications reversed %}
     {% if post.category == 'working' %}
       {% include archive-single-cv.html %}
     {% endif %}
   {% endfor %}</ul>
-  
-## Invited Talks
-  <ul>{% for post in site.talks reversed %}
+
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Invited Talks</summary>
+<ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
-## Teaching
-  <ul>{% for post in site.teaching reversed %}
+</details>
+
+<details class="research-section" markdown="1">
+<summary>Teaching</summary>
+<ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 - Valuation Lab (8-week workshop), Amrut Mody School of Management, Ahmedabad University (Oct–Dec 2026)
 - Teaching Assistant, IIM Bangalore (Jun 2023 – Dec 2024): Accounting for Decisions (PGP I), Corporate Finance (PGP I), Fixed Income Securities & its Derivatives (PGP II)
+
+</details>
