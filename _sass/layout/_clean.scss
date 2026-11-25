@@ -280,49 +280,13 @@ body .archive__item {
   }
 }
 
-/* Collapsible "Presented at" */
+/* Presented at */
 .presented {
-  margin: 1.5rem 0;
-  border-bottom: 1px solid var(--global-border-color);
+  margin: 0 0 1.5rem;
 
-  summary {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 44px;
-    padding-bottom: 0.3rem;
-    border-bottom: 1px solid var(--global-border-color);
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--global-text-color);
-    cursor: pointer;
-    list-style: none;
-
-    &::-webkit-details-marker {
-      display: none;
-    }
-
-    &::after {
-      content: "+";
-      font-size: 1.4rem;
-      font-weight: 400;
-      line-height: 1;
-      color: var(--global-link-color);
-    }
-  }
-
-  &[open] summary {
-    border-bottom: 0;
-
-    &::after {
-      content: "\2212";
-    }
-  }
-
-  ul {
-    margin-top: 0;
+  /* Show details swaps the short list for the full one */
+  &:has(.presented__full[open]) .presented__years {
+    display: none;
   }
 }
 
@@ -344,11 +308,11 @@ body .archive__item {
 
   summary {
     display: inline-block;
-    min-height: 0;
     padding: 0 0.6em;
     border: 1px solid var(--global-link-color);
     border-radius: 4px;
     font-size: 0.75rem;
+    font-weight: 600;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: var(--global-link-color);
@@ -359,45 +323,23 @@ body .archive__item {
       display: none;
     }
 
-    &::after {
-      content: " +";
+    .hide {
+      display: none;
     }
   }
 
   &[open] summary {
-    background: var(--global-link-color);
-    color: var(--global-bg-color);
+    .show {
+      display: none;
+    }
 
-    &::after {
-      content: " \2212";
+    .hide {
+      display: inline;
     }
   }
 
   ul {
     margin-top: 0.8rem;
     font-size: 0.92rem;
-  }
-}
-
-/* Nested button must not inherit the section-header summary styles */
-.presented .presented__full summary {
-  display: inline-block;
-  padding-bottom: 0;
-  border-bottom: 1px solid var(--global-link-color);
-  font-weight: 600;
-
-  &::after {
-    content: " +";
-    font-size: inherit;
-    font-weight: inherit;
-    color: inherit;
-  }
-}
-
-.presented .presented__full[open] summary {
-  border-bottom: 1px solid var(--global-link-color);
-
-  &::after {
-    content: " \2212";
   }
 }
