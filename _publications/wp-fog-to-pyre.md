@@ -17,10 +17,7 @@ header:
 
 
 
-<details class="presented" markdown="1">
-<summary>Presented at (2)</summary>
+## Presented at:
 
 - *Jun 2024* – [Research Symposium on Finance and Economics (RSFE)](https://krea.edu.in/ifmrgsb/research-symposium-finance-and-economics/), organised by IFMR GSB, Krea University
 - *Apr 2024* – [7th Monash-Warwick-Zurich Text-as-Data Workshop](https://warwick.ac.uk/fac/soc/economics/research/centres/cage/events/15-04-24-7th_monash_warwick_zurich_text_as_data_workshop/), organized by Monash University, the University of Warwick, and ETH Zurich's Center for Law & Economics
-
-</details>
