@@ -16,7 +16,8 @@
 
 {% if page.collection == 'publications' %}
 <meta name="citation_title" content="{{ page.title | escape }}">
-{% assign cite_authors = page.authors | split: ', and ' | join: ', ' | split: ' and ' | join: ', ' | split: ', ' %}
+{% assign cite_plain = page.authors | markdownify | strip_html | replace: ' (IIM Ranchi)', '' | replace: ' (IIM Bangalore)', '' | strip_newlines %}
+{% assign cite_authors = cite_plain | split: ', and ' | join: ', ' | split: ' and ' | join: ', ' | split: ', ' %}
 {% for a in cite_authors %}<meta name="citation_author" content="{{ a | strip | escape }}">
 {% endfor %}
 {% if page.date %}<meta name="citation_publication_date" content="{{ page.date | date: '%Y/%m/%d' }}">{% endif %}

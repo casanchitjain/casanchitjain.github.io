@@ -8,7 +8,7 @@ permalink: /publication/wp-contagion-effects
 excerpt: 'Spillover impact of equity financing announcement by a business-group affiliated firm on the value of other firms in the group'
 date: 2026-05-01
 venue: 
-paperurl: '[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5024025)'
+paperurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5024025"
 abstract: "We examine whether announcements of financing decisions by group-affiliated firms have any spillover effects on the value of their member firms. Employing data on rights offerings, private placements of equity, and follow-on public offerings by group-affiliated firms in India, we find that a positive (negative) market reaction to the announcement of a financing decision by a group-affiliated firm also leads to a positive (negative) market reaction for non-event firms within the same business group. Further, this contagion effect is stronger for the group's leading firms, firms that announce relatively large issues of equity, and financially constrained firms. Our results are robust to several checks as well as alternative measures of our main variables of interest."
 conferences: "ICGS 2024; IFAC 2024; IFC 2024; JCAE 2025; IIMU Research Day 2025; BAFA 2025; EAA 2025; AFBC 2025; SBFC 2025; EMC 2025; IMRC 2025"
 citation: 
