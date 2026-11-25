@@ -24,5 +24,7 @@ I teach finance by simplifying complex ideas through storytelling, real-world an
 
 ## Other teaching roles
 
-- **Valuation Lab (8-week workshop)**, Amrut Mody School of Management, Ahmedabad University, Oct–Dec 2026
-- **Teaching Assistant**, Indian Institute of Management Bangalore, Jun 2023 – Dec 2024: Accounting for Decisions (PGP I), Corporate Finance (PGP I), Fixed Income Securities & its Derivatives (PGP II)
+<ul class="cv-entries">
+  <li class="cv-entry"><span class="cv-entry__title cv-entry__title--plain">Valuation Lab (8-week workshop)</span><span class="cv-entry__meta">Amrut Mody School of Management, Ahmedabad University, Oct&ndash;Dec 2026</span></li>
+  <li class="cv-entry"><span class="cv-entry__title cv-entry__title--plain">Teaching Assistant</span><span class="cv-entry__meta">Indian Institute of Management Bangalore, Jun 2023&ndash;Dec 2024: Accounting for Decisions (PGP I), Corporate Finance (PGP I), Fixed Income Securities &amp; its Derivatives (PGP II)</span></li>
+</ul>
