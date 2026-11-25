@@ -1,17 +1,43 @@
 {% include base_path %}
 
-{% if page.previous or page.next %}
+{% assign prev_item = page.previous %}
+{% assign next_item = page.next %}
+
+{% comment %} Publications: page within the same kind (papers or teaching cases), in date order. {% endcomment %}
+{% if page.collection == 'publications' %}
+  {% assign prev_item = nil %}
+  {% assign next_item = nil %}
+  {% assign is_case = false %}
+  {% if page.category == 'cases' %}{% assign is_case = true %}{% endif %}
+  {% assign sorted = site.publications | sort: 'date' %}
+  {% assign found = false %}
+  {% for p in sorted %}
+    {% assign p_case = false %}
+    {% if p.category == 'cases' %}{% assign p_case = true %}{% endif %}
+    {% if p_case == is_case %}
+      {% if p.url == page.url %}
+        {% assign found = true %}
+      {% elsif found == false %}
+        {% assign prev_item = p %}
+      {% elsif next_item == nil %}
+        {% assign next_item = p %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if prev_item or next_item %}
   <nav class="pager" aria-label="More {{ page.collection | default: 'pages' }}">
-    {% if page.previous %}
-      <a class="pager__link pager__link--prev" href="{{ base_path }}{{ page.previous.url }}" rel="prev">
+    {% if prev_item %}
+      <a class="pager__link pager__link--prev" href="{{ base_path }}{{ prev_item.url }}" rel="prev">
         <span class="pager__label"><span aria-hidden="true">&#8249;</span> Previous</span>
-        <span class="pager__title">{{ page.previous.title | markdownify | strip_html | strip }}</span>
+        <span class="pager__title">{{ prev_item.title | markdownify | strip_html | strip }}</span>
       </a>
     {% else %}<span></span>{% endif %}
-    {% if page.next %}
-      <a class="pager__link pager__link--next" href="{{ base_path }}{{ page.next.url }}" rel="next">
+    {% if next_item %}
+      <a class="pager__link pager__link--next" href="{{ base_path }}{{ next_item.url }}" rel="next">
         <span class="pager__label">Next <span aria-hidden="true">&#8250;</span></span>
-        <span class="pager__title">{{ page.next.title | markdownify | strip_html | strip }}</span>
+        <span class="pager__title">{{ next_item.title | markdownify | strip_html | strip }}</span>
       </a>
     {% endif %}
   </nav>
