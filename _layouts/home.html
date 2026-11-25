@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  <div class="home">
+    <div class="hero">
+      <img src="{{ '/images/profile.png' | prepend: base_path }}" alt="Portrait of {{ site.author.name }}" fetchpriority="high">
+      <div>
+        <h1 class="hero__name">{{ site.author.name }}</h1>
+        <p class="hero__tagline">{{ page.tagline }}</p>
+        <p class="hero__links">
+          <a href="#" class="obf-email" data-u="sanchit.jain" data-d="ahduni.edu.in">Email</a>
+          {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}">Google Scholar</a>{% endif %}
+          {% if site.author.ssrn %}<a href="{{ site.author.ssrn }}">SSRN</a>{% endif %}
+          {% if site.author.orcid %}<a href="{{ site.author.orcid }}">ORCID</a>{% endif %}
+          {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}">LinkedIn</a>{% endif %}
+        </p>
+      </div>
+    </div>
+    {{ content }}
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.obf-email').forEach(function (a) {
+  a.href = 'mailto:' + a.dataset.u + '@' + a.dataset.d;
+});
+</script>

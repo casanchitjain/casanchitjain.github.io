@@ -27,43 +27,36 @@ redirect_from:
 - **Ahmedabad University**  
   Bachelor of Commerce, 2014
 
-Corporate experience
-======
-
+## Corporate experience
 - Senior Product Manager, Wealth, Batlivala & Karani (May 2019 – Jun 2021)
 - Product Specialist, ICICI Prudential Asset Management Company (Sep 2017 – May 2019)
 - Transaction Advisory Analyst, Corporate Catalyst India (Sep 2015 – Feb 2016)
 - Article Assistant, Assurance, ASA & Associates LLP (Aug 2013 – Sep 2015)
 - Article Assistant, Assurance, S.R. Batliboi & Associates LLP (EY) (Aug 2012 – Aug 2013)
 
-Scholarships & Awards
-======
-
+## Scholarships & Awards
 - Content Award, FinX Institute (CIEL) (Sep 2026)
 - Florintree Scholarship Award, IIM Bangalore (2025–26)
 - Best Research Paper Award in Finance, First Prize, Corporate Finance, RSFE Conference (Jun 2025)
 - Mirae Asset Scholar Award, IIM Bangalore (2024–25)
 - Stunning Debutant Award, ICICI Prudential AMC Ltd (Apr 2018)
 
-Professional Service
-======
-
+## Professional Service
 - Discussant: RSFE 2025
 - Conference Reviewer: ICGS Conference 2024
 - Case Reviewer: Asian Journal of Management Cases (Nov 2026)
-- Capstone Projects: supervised 2 capstone projects, 2026–27, Amrut Mody School of Management, Ahmedabad University
+- Faculty Mentor, Capstone Projects (2026–27, ongoing), Amrut Mody School of Management, Ahmedabad University:
+  - *AI-Driven Commodity and Purchase-Timing Intelligence for Manufacturing Procurement*
+  - *From Traditional Stockbroking to Digital Investment Apps: Investor Behaviour in India*
 
-Outreach & Financial Education
-======
-
+## Outreach & Financial Education
 - Financial Wellness Program Facilitator, Switzerland Consulate, Bangalore (Jan–Jun 2024) — pro-bono workshops for support staff — [Letter of appreciation](/files/letter-swiss-consulate-2024.pdf)
 - Personal Finance Training, Finance ke Funde Academy (2018–present) — pro-bono personal finance workshops
 - Mutual Funds Product Training Sessions, ICICI Prudential AMC (2017–2019)
 - Academic/Career Counselor, Institute of Chartered Accountants of India (2017–present)
 
   
-Skills
-======
+## Skills
 ### Programming
 - R
 - Python
@@ -83,30 +76,26 @@ Skills
 - Gujarati (elementary)
 
 
-Publications
-======
+## Publications
   <ul>{% for post in site.publications reversed %}
     {% if post.category != 'working' %}
       {% include archive-single-cv.html %}
     {% endif %}
   {% endfor %}</ul>
 
-Working Papers
-======
+## Working Papers
   <ul>{% for post in site.publications reversed %}
     {% if post.category == 'working' %}
       {% include archive-single-cv.html %}
     {% endif %}
   {% endfor %}</ul>
   
-Invited Talks
-======
+## Invited Talks
   <ul>{% for post in site.talks reversed %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
-Teaching
-======
+## Teaching
   <ul>{% for post in site.teaching reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>

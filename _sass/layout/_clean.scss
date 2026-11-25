@@ -1,0 +1,222 @@
+/* ==========================================================================
+   CLEAN SINGLE-COLUMN LAYOUT (overrides the theme's sidebar layout)
+   ========================================================================== */
+
+$clean-width: 760px;
+
+body {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.masthead__inner-wrap {
+  max-width: $clean-width;
+  padding: 0.6em 24px;
+}
+
+/* No sidebar: profile lives in the home-page hero */
+.sidebar {
+  display: none !important;
+}
+
+body #main {
+  max-width: $clean-width;
+  margin: 2em auto 0;
+  padding: 0 24px 60px;
+}
+
+body .page,
+body .archive,
+body .home {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body .page__inner-wrap,
+body .page__content {
+  float: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+body h1,
+body .page__title {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin: 0 0 0.4em;
+}
+
+body .archive > h2,
+body .page__content > h2,
+body .home > h2 {
+  margin: 2.4em 0 0.8em;
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid var(--global-border-color);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+}
+
+/* Entries (papers, courses, talks) */
+body .archive__item-title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  line-height: 1.35;
+  color: var(--global-text-color);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+body .archive__item {
+  margin: 0;
+  padding: 0.9em 0;
+  border-bottom: 1px solid var(--global-border-color);
+
+  p {
+    margin: 0.2em 0 0;
+  }
+}
+
+.paper-authors,
+.paper-venue {
+  font-size: 0.92rem;
+  color: var(--global-text-color-light);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.paper-venue {
+  font-style: italic;
+}
+
+.paper-btns {
+  margin-top: 0.5em;
+}
+
+.paper-btns a.paper-btn,
+.paper-btn,
+.paper-abstract summary {
+  display: inline-block;
+  margin: 0 0.4em 0 0;
+  padding: 0 0.6em;
+  border: 1px solid var(--global-link-color);
+  border-radius: 4px;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--global-link-color);
+  cursor: pointer;
+  list-style: none;
+}
+
+.paper-abstract {
+  display: inline;
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  &[open] summary {
+    background: var(--global-link-color);
+    color: var(--global-bg-color);
+  }
+
+  p {
+    display: block;
+    margin: 0.7em 0 0;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: var(--global-text-color);
+  }
+}
+
+/* Home hero */
+.hero {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 1.6em;
+
+  img {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  &__name {
+    margin: 0 0 0.1em;
+    font-size: 1.9rem;
+  }
+
+  &__tagline {
+    margin: 0 0 0.6em;
+    color: var(--global-text-color-light);
+  }
+
+  &__links a {
+    margin-right: 14px;
+    font-size: 0.92rem;
+    text-decoration: none;
+  }
+}
+
+/* Teaching cards */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 1em;
+
+  .card {
+    display: block;
+    padding: 14px 16px;
+    border: 1px solid var(--global-border-color);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--global-text-color);
+
+    b {
+      display: block;
+      line-height: 1.35;
+    }
+
+    span {
+      font-size: 0.92rem;
+      color: var(--global-text-color-light);
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
+.page__footer {
+  background: transparent;
+  font-size: 0.85rem;
+}

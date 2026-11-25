@@ -1,20 +1,29 @@
 ---
 permalink: /
-title: "About"
-author_profile: true
+title: "Sanchit Jain"
+layout: home
+tagline: "Assistant Professor of Finance, Ahmedabad University. PhD, IIM Bangalore. Chartered Accountant."
 redirect_from:
   - /about/
   - /about.html
 ---
 
-I am an Assistant Professor at Ahmedabad University. I completed my PhD in Finance and Accounting at the Indian Institute of Management Bangalore, where my dissertation, *Signal, Structure, and Outcome: Essays on Information Transmission in Mutual Funds and Business Groups in India*, examined how information is transmitted through financial intermediaries and organizational networks, and how this affects investor behavior and firm outcomes.
+I study how regulation and organisational structure shape the behaviour of mutual funds, business groups and investors in India, using quasi-experimental methods and large-scale text analysis. Before academia, I worked in asset and wealth management at ICICI Prudential Asset Management Company and Batlivala & Karani.
 
-My research lies at the intersection of corporate finance, financial intermediation, and regulatory design, with a particular focus on mutual funds, business groups, and the role of information transmission in financial markets. I use large-scale textual analysis, quasi-experimental methods, and machine learning tools to study how organisational structure, disclosure, media attention, and intermediary incentives shape economic outcomes.
+## Selected research
 
-Prior to joining academia, I worked in the asset management and wealth management industry, including roles at Batlivala & Karani and ICICI Prudential Asset Management Company. I am also a Chartered Accountant and have completed CFA Level I.
+{% for post in site.publications reversed %}{% if post.selected %}
+  {% include archive-single.html show_excerpt=false show_citation=false show_links=false show_abstract=true %}
+{% endif %}{% endfor %}
 
-**Research Interests:** Corporate Finance, Financial Intermediation, Mutual Funds, Regulatory Design, Text Analysis
+[All research →](/research/)
 
-**Contact:** sanchit.jain [at] ahduni.edu.in · [Faculty page, Ahmedabad University](https://ahduni.edu.in/faculty/sanchit-jain/)
+## Teaching
 
-<small>Last updated: {{ site.time | date: "%B %Y" }}</small>
+<div class="cards">
+{% assign courses = site.teaching | sort: "date" | reverse %}{% for c in courses limit:2 %}
+  <a class="card" href="{{ c.url }}"><b>{{ c.title }}</b><span>{{ c.type }}, {{ c.venue }} · {{ c.date | date: "%Y" }}</span></a>
+{% endfor %}
+</div>
+
+[All teaching →](/teaching/)
