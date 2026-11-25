@@ -17,37 +17,36 @@ redirect_from:
 
 <details class="research-section" open markdown="1">
 <summary>Education</summary>
-- **Indian Institute of Management Bangalore**  
-  PhD in Finance and Accounting, 2021–2026
-
-- **Institute of Chartered Accountants of India**  
-  Chartered Accountant, 2017
-
-- **CFA Institute**  
-  Completed CFA Level I, 2018
-
-- **Ahmedabad University**  
-  Bachelor of Commerce, 2014
+<ol class="timeline">
+  <li><span class="timeline__date">2021 – 2026</span><span class="timeline__body"><strong>PhD in Finance and Accounting</strong><br>Indian Institute of Management Bangalore</span></li>
+  <li><span class="timeline__date">2018</span><span class="timeline__body"><strong>Completed CFA Level I</strong><br>CFA Institute</span></li>
+  <li><span class="timeline__date">2017</span><span class="timeline__body"><strong>Chartered Accountant</strong><br>Institute of Chartered Accountants of India</span></li>
+  <li><span class="timeline__date">2014</span><span class="timeline__body"><strong>Bachelor of Commerce</strong><br>Ahmedabad University</span></li>
+</ol>
 
 </details>
 
 <details class="research-section" markdown="1">
 <summary>Corporate experience</summary>
-- Senior Product Manager, Wealth, Batlivala & Karani (May 2019 – Jun 2021)
-- Product Specialist, ICICI Prudential Asset Management Company (Sep 2017 – May 2019)
-- Transaction Advisory Analyst, Corporate Catalyst India (Sep 2015 – Feb 2016)
-- Article Assistant, Assurance, ASA & Associates LLP (Aug 2013 – Sep 2015)
-- Article Assistant, Assurance, S.R. Batliboi & Associates LLP (EY) (Aug 2012 – Aug 2013)
+<ol class="timeline">
+  <li><span class="timeline__date">May 2019 – Jun 2021</span><span class="timeline__body"><strong>Senior Product Manager, Wealth</strong><br>Batlivala &amp; Karani</span></li>
+  <li><span class="timeline__date">Sep 2017 – May 2019</span><span class="timeline__body"><strong>Product Specialist</strong><br>ICICI Prudential Asset Management Company</span></li>
+  <li><span class="timeline__date">Sep 2015 – Feb 2016</span><span class="timeline__body"><strong>Transaction Advisory Analyst</strong><br>Corporate Catalyst India</span></li>
+  <li><span class="timeline__date">Aug 2013 – Sep 2015</span><span class="timeline__body"><strong>Article Assistant, Assurance</strong><br>ASA &amp; Associates LLP</span></li>
+  <li><span class="timeline__date">Aug 2012 – Aug 2013</span><span class="timeline__body"><strong>Article Assistant, Assurance</strong><br>S.R. Batliboi &amp; Associates LLP (EY)</span></li>
+</ol>
 
 </details>
 
 <details class="research-section" markdown="1">
 <summary>Scholarships & Awards</summary>
-- Content Award, FinX Institute (CIEL) (Sep 2026)
-- Florintree Scholarship Award, IIM Bangalore (2025–26)
-- Best Research Paper Award in Finance, First Prize, Corporate Finance, RSFE Conference (Jun 2025)
-- Mirae Asset Scholar Award, IIM Bangalore (2024–25)
-- Stunning Debutant Award, ICICI Prudential AMC Ltd (Apr 2018)
+<ol class="timeline">
+  <li><span class="timeline__date">Sep 2026</span><span class="timeline__body"><strong>Content Award</strong><br>FinX Institute (CIEL)</span></li>
+  <li><span class="timeline__date">2025 – 26</span><span class="timeline__body"><strong>Florintree Scholarship Award</strong><br>IIM Bangalore</span></li>
+  <li><span class="timeline__date">Jun 2025</span><span class="timeline__body"><strong>Best Research Paper Award in Finance, First Prize, Corporate Finance</strong><br>RSFE Conference</span></li>
+  <li><span class="timeline__date">2024 – 25</span><span class="timeline__body"><strong>Mirae Asset Scholar Award</strong><br>IIM Bangalore</span></li>
+  <li><span class="timeline__date">Apr 2018</span><span class="timeline__body"><strong>Stunning Debutant Award</strong><br>ICICI Prudential AMC Ltd</span></li>
+</ol>
 
 </details>
 
