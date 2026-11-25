@@ -25,6 +25,12 @@ My industry experience in asset management and wealth management allows me to co
   {% include archive-single.html %}
 {% endfor %}
 
+## Teaching cases
+
+{% for post in site.publications reversed %}{% if post.category == 'cases' %}
+  {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
+{% endif %}{% endfor %}
+
 ## Other teaching roles
 
 - **Valuation Lab (8-week workshop)**, Amrut Mody School of Management, Ahmedabad University, Oct–Dec 2026

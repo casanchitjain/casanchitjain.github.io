@@ -33,11 +33,11 @@ My current and future research focuses on three broad themes:
 <h2>{{ category[1].title }}</h2>
 {% assign title_shown = true %}
 {% endunless %}
-      {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
+      {% include archive-single.html show_excerpt=false show_citation=false show_links=false show_abstract=true show_conferences=true %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html show_excerpt=false show_citation=false show_links=false %}
+    {% include archive-single.html show_excerpt=false show_citation=false show_links=false show_abstract=true show_conferences=true %}
   {% endfor %}
 {% endif %}

@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2026-energy-related-discussion
 date: 2026-01-01
 venue: "Journal of Futures Markets"
-authors: "Alok Dixit, Sanchit Jain, Brian Lucey, and Jalaj Pathak"
+authors: "[Alok Dixit](https://www.iiml.ac.in/faculty-data?n=MTQ%3D), Sanchit Jain, [Brian Lucey](https://www.tcd.ie/business/people/faculty-professors/blucey/), and [Jalaj Pathak](https://www.iiml.ac.in/faculty-data?n=MTM2)"
 citation: "Dixit, A., S.Jain, B.Lucey, and J.Pathak. 2026. “Energy-Related Discussion in Fed Speeches and Options-Implied Equity Risk Premium.” Journal of Futures Markets 46: 719–737. https://doi.org/10.1002/fut.70078."
 paperurl: "https://doi.org/10.1002/fut.70078"
 ---

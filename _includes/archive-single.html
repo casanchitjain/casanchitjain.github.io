@@ -45,26 +45,36 @@
       </p>
     
     {% elsif post.collection == 'publications' %}
-    
+
       {% if post.authors %}
-        <p><strong>{{ post.authors }}</strong></p>
+        <p class="paper-authors">{{ post.authors | replace: "Sanchit Jain", "**Sanchit Jain**" | markdownify | remove: "<p>" | remove: "</p>" }}</p>
       {% endif %}
 
-      {% if post.paperurl and post.paperurl != "" and include.show_links == false %}
-        <p>{% if post.paperurl contains '](' %}{{ post.paperurl | markdownify | remove: '<p>' | remove: '</p>' }}{% else %}<a href="{{ post.paperurl }}">Link to paper</a>{% endif %}</p>
-      {% endif %}
-    
       {% unless post.category == 'working' %}
         {% if post.venue and post.date %}
-          <p>
-            Published in <i>{{ post.venue }}</i>,
-            {{ post.date | default: "1900-01-01" | date: "%Y" }}
-          </p>
+          <p class="paper-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>
         {% elsif post.venue %}
-          <p>Published in <i>{{ post.venue }}</i></p>
+          <p class="paper-venue">{{ post.venue }}</p>
         {% endif %}
       {% endunless %}
-    
+
+      {% if include.show_conferences and post.conferences %}
+        <p class="paper-venue">Presented: {{ post.conferences }}</p>
+      {% endif %}
+
+      {% assign has_link = false %}
+      {% if post.paperurl and post.paperurl != "" and include.show_links == false %}{% assign has_link = true %}{% endif %}
+      {% if has_link or include.show_abstract and post.abstract %}
+        <div class="paper-btns">
+          {% if has_link %}
+            {% if post.paperurl contains '](' %}{{ post.paperurl | markdownify | remove: '<p>' | remove: '</p>' | replace: '<a ', '<a class="paper-btn" ' }}{% else %}<a class="paper-btn" href="{{ post.paperurl }}">{% if post.category == 'cases' %}Case{% else %}Paper{% endif %}</a>{% endif %}
+          {% endif %}
+          {% if include.show_abstract and post.abstract %}
+            <details class="paper-abstract"><summary>Abstract</summary><p>{{ post.abstract }}</p></details>
+          {% endif %}
+        </div>
+      {% endif %}
+
     {% elsif post.date %}
       <p class="page__date">
         <strong>
