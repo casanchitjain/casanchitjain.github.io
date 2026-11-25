@@ -2,7 +2,7 @@
 permalink: /
 title: "Sanchit Jain"
 layout: home
-tagline: "Assistant Professor of Finance, Ahmedabad University. PhD, IIM Bangalore. Chartered Accountant."
+tagline: "Assistant Professor of Finance, Ahmedabad University.<br>PhD, IIM Bangalore. Chartered Accountant."
 redirect_from:
   - /about/
   - /about.html
