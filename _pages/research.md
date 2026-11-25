@@ -5,18 +5,11 @@ permalink: /research/
 author_profile: true
 ---
 
-My research examines how regulatory and organizational institutions shape the behavior of firms, financial intermediaries, and investors, with a particular focus on India. My primary research area is mutual funds and delegated asset management. I study how compensation structures, distribution incentives, and regulatory interventions affect capital allocation and investor welfare. More broadly, I work in corporate finance, financial intermediation, and law and finance using quasi-experimental methods, panel regressions, and computational text analysis. The central question in my work is how institutional design influences economic decisions and, in turn, affects market efficiency and investor welfare.
+I study how regulation and organizational structure shape the behavior of mutual funds, business groups, and investors in India, using quasi-experimental methods and large-scale text analysis. My work has three themes:
 
-My current and future research focuses on three broad themes:
-
-1. **Regulatory Design and Investor Welfare**  
-   Examining how SEBI regulations affect mutual fund managers, distributors, and retail investors.
-
-2. **Information Transmission in Organizational Networks**  
-   Studying how financing decisions, disclosures, and legal institutions generate spillover effects across affiliated firms and markets.
-
-3. **Computational Text Analysis in Finance**  
-   Using large language models to extract structured information from financial news, legal judgments, and regulatory disclosures.
+- **Regulatory design and investor welfare:** how SEBI rules affect fund managers, distributors, and retail investors.
+- **Information transmission in organizational networks:** how financing decisions and disclosures spill over across affiliated firms.
+- **Computational text analysis in finance:** using language models to extract structure from news, legal judgments, and regulatory disclosures.
 
 {% include base_path %}
 
