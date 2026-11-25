@@ -226,11 +226,26 @@
     }
 
     #theme-toggle {
-      a {
+      a,
+      .theme-toggle-btn {
         width: 25px;
         display: flex;
         justify-content: center;
         cursor: pointer;
+      }
+
+      .theme-toggle-btn {
+        position: static;
+        height: auto;
+        min-width: 44px;
+        min-height: 44px;
+        margin: 0 0.5rem;
+        padding: 0.5rem 0;
+        background: none;
+        border: 0;
+        color: var(--global-masthead-link-color);
+        font: inherit;
+        z-index: auto;
       }
     }
 
@@ -440,5 +455,19 @@
     @include breakpoint($medium) {
       display: block;
     }
+  }
+}
+
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  padding: 0.5em 1em;
+  background: var(--global-bg-color);
+  color: var(--global-link-color);
+
+  &:focus {
+    left: 0;
   }
 }
