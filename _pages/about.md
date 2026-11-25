@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I study how regulation and organisational structure shape the behaviour of mutual funds, business groups and investors in India, using quasi-experimental methods and large-scale text analysis. Before academia, I worked in asset and wealth management at ICICI Prudential Asset Management Company and Batlivala & Karani.
+I study how regulation and organizational structure shape the behavior of mutual funds, business groups and investors in India, using quasi-experimental methods and large-scale text analysis. Before academia, I worked in asset and wealth management at ICICI Prudential Asset Management Company and Batlivala & Karani.
 
 ## Selected research
 
