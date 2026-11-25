@@ -20,24 +20,16 @@ My current and future research focuses on three broad themes:
 
 {% include base_path %}
 
-<!-- Render publications by category, suppress abstracts, citations, and links -->
-{% if site.publication_category %}
-  {% for category in site.publication_category %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      
-{% unless title_shown %}
-<h2>{{ category[1].title }}</h2>
-{% assign title_shown = true %}
-{% endunless %}
-      {% include archive-single.html show_excerpt=false show_citation=false show_links=false show_abstract=true show_conferences=true %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html show_excerpt=false show_citation=false show_links=false show_abstract=true show_conferences=true %}
-  {% endfor %}
+<!-- One collapsible section per category; only one open at a time (details name= makes an exclusive group) -->
+{% assign opened = false %}
+{% for category in site.publication_category %}
+{% assign items = site.publications | where: "category", category[0] | reverse %}
+{% if items.size > 0 %}
+<details class="research-section" name="research-sections"{% unless opened %} open{% assign opened = true %}{% endunless %}>
+<summary>{{ category[1].title }} <span class="research-count">{{ items.size }}</span></summary>
+{% for post in items %}
+{% include archive-single.html show_excerpt=false show_citation=false show_links=false show_abstract=true show_conferences=true show_order=true %}
+{% endfor %}
+</details>
 {% endif %}
+{% endfor %}
