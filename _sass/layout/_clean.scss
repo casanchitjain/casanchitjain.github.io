@@ -2,7 +2,7 @@
    CLEAN SINGLE-COLUMN LAYOUT (overrides the theme's sidebar layout)
    ========================================================================== */
 
-$clean-width: 760px;
+$clean-width: 880px;
 
 body {
   font-size: 17px;
@@ -410,4 +410,70 @@ body .archive__item {
 .course-rating {
   margin: 0.2rem 0;
   font-size: 0.95rem;
+}
+
+/* CV: tighter list indent inside sections */
+.research-section ul:not(.timeline) {
+  padding-left: 1.2rem;
+  margin-left: 0;
+}
+
+/* Vertical timeline (CV corporate experience) */
+.timeline {
+  position: relative;
+  margin: 0.8rem 0 0.4rem;
+  padding: 0 0 0 1.6rem;
+  list-style: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    bottom: 0.5rem;
+    left: 0.3rem;
+    width: 2px;
+    background: var(--global-border-color);
+  }
+
+  li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 11rem 1fr;
+    gap: 1rem;
+    margin: 0 0 1.1rem;
+    padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.55rem;
+      left: -1.6rem;
+      width: 0.7rem;
+      height: 0.7rem;
+      border-radius: 50%;
+      background: var(--global-bg-color);
+      border: 2px solid var(--global-link-color);
+    }
+
+    &:first-child::before {
+      background: var(--global-link-color);
+    }
+  }
+}
+
+.timeline__date {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
+  }
+
+  .timeline__date {
+    white-space: normal;
+  }
 }
