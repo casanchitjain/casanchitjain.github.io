@@ -14,7 +14,8 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            {% assign is_section = false %}{% if page.url contains link.url and link.url != '/' %}{% assign is_section = true %}{% elsif link.url == '/research/' and page.collection == 'publications' %}{% assign is_section = true %}{% endif %}
+            <li class="masthead__menu-item {% if is_section %}selected{% endif %}{% if page.url == link.url %} selected--exact{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}

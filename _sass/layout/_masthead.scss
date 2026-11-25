@@ -70,8 +70,12 @@
   color: var(--global-text-color);
   font-weight: 700;
   border-bottom: 2px solid var(--global-text-color);
-  pointer-events: none; /* Move this here */
-  cursor: default; /* Move this here too */
+}
+
+/* Only the page you are on is inert; section parents stay clickable */
+.masthead__menu-item.selected--exact a {
+  pointer-events: none;
+  cursor: default;
 }
 
 .masthead__menu-item.selected a:hover {
