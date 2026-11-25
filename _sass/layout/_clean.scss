@@ -393,3 +393,15 @@ body .archive__item {
     color: var(--global-text-color-light);
   }
 }
+
+/* Talks: compact entries */
+.talk-meta {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+}
+
+.talk-note p {
+  margin: 0 0 0.4rem;
+  font-size: 0.9rem;
+}

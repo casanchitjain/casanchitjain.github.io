@@ -3,6 +3,7 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
+description: "Research by Sanchit Jain on mutual funds, business groups, regulatory design and computational text analysis in Indian finance: journal articles, teaching cases and working papers."
 ---
 
 I study how regulation and organizational structure shape the behavior of mutual funds, business groups, and investors in India, using quasi-experimental methods and large-scale text analysis. My work has three themes:

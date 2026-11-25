@@ -3,6 +3,7 @@ layout: archive
 title: "Teaching"
 permalink: /teaching/
 author_profile: true
+description: "Courses, teaching cases and teaching philosophy of Sanchit Jain, Assistant Professor of Finance at Ahmedabad University."
 ---
 
 My teaching philosophy centers on simplifying complex ideas through storytelling, real-world analogies, and practical applications. I aim to help students understand the economic intuition behind financial concepts and connect theory to current developments in financial markets and regulation.
