@@ -47,12 +47,14 @@
     {% elsif post.collection == 'publications' %}
 
       {% if post.authors %}
-        <p class="paper-authors">{{ post.authors | replace: "Sanchit Jain", "**Sanchit Jain**" | markdownify | remove: "<p>" | remove: "</p>" }}{% if post.alphabetical %} <span class="author-order">(alphabetical order)</span>{% endif %}</p>
+        <p class="paper-authors">{{ post.authors | replace: "Sanchit Jain", "**Sanchit Jain**" | markdownify | remove: "<p>" | remove: "</p>" }}{% if post.alphabetical and include.show_order %} <span class="author-order">(lexicographic order)</span>{% endif %}</p>
       {% endif %}
 
       {% unless post.category == 'working' %}
-        {% if post.venue and post.date %}
-          <p class="paper-venue">{% if post.category == 'manuscripts' and post.paperurl != '' %}<a href="{{ post.paperurl }}">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}, {{ post.date | date: "%Y" }}</p>
+        {% if post.under_review %}
+          <p class="paper-venue">Under review at {{ post.venue }}</p>
+        {% elsif post.venue and post.date %}
+          <p class="paper-venue">{% if post.paperurl != '' and post.paperurl != nil and post.category != 'working' %}<a href="{{ post.paperurl }}">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}, {{ post.date | date: "%Y" }}</p>
         {% elsif post.venue %}
           <p class="paper-venue">{{ post.venue }}</p>
         {% endif %}
@@ -63,7 +65,7 @@
       {% endif %}
 
       {% assign has_link = false %}
-      {% if post.paperurl and post.paperurl != "" and include.show_links == false %}{% assign has_link = true %}{% endif %}
+      {% if post.paperurl and post.paperurl != "" and post.category == 'working' and include.show_links == false %}{% assign has_link = true %}{% endif %}
       {% if has_link or include.show_abstract and post.abstract %}
         <div class="paper-btns">
           {% if has_link %}

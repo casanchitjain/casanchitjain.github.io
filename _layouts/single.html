@@ -43,13 +43,15 @@ layout: default
 {% elsif page.collection == 'publications' %}
 
   {% if page.authors %}
-    <p><strong>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong>{% if page.alphabetical %}<br /><span class="author-order">Authors listed in alphabetical order</span>{% endif %}</p>
+    <p><strong>{{ page.authors | markdownify | remove: '<p>' | remove: '</p>' | strip }}</strong>{% if page.alphabetical %} <span class="author-order">(lexicographic order)</span>{% endif %}</p>
   {% endif %}
 
   {% unless page.category == 'working' %}
-    {% if page.venue and page.date %}
+    {% if page.under_review %}
+      <p>Under review at <i>{{ page.venue }}</i></p>
+    {% elsif page.venue and page.date %}
       <p>
-        Published in <i>{% if page.category == 'manuscripts' and page.paperurl != '' %}<a href="{{ page.paperurl }}">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}</i>,
+        Published in <i>{% if page.category != 'working' and page.paperurl != '' and page.paperurl != nil %}<a href="{{ page.paperurl }}">{{ page.venue }}</a>{% else %}{{ page.venue }}{% endif %}</i>,
         {{ page.date | default: "1900-01-01" | date: "%Y" }}
       </p>
     {% elsif page.venue %}
@@ -82,7 +84,7 @@ layout: default
         <p>{{ page.abstract }}</p>{% endif %}
         {{ content }}
 
-        {% assign paper_dl = page.paperurl %}{% if page.category == 'manuscripts' or paper_dl == '' %}{% assign paper_dl = nil %}{% endif %}
+        {% assign paper_dl = page.paperurl %}{% if page.category == 'manuscripts' or page.category == 'cases' or paper_dl == '' %}{% assign paper_dl = nil %}{% endif %}
         {% if page.citation and paper_dl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and paper_dl and page.slidesurl %}
