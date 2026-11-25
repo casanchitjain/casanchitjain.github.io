@@ -7,7 +7,7 @@ date: 2026-01-01
 venue: "Journal of Futures Markets"
 authors: "[Alok Dixit](https://www.iiml.ac.in/faculty-data?n=MTQ%3D), Sanchit Jain, [Brian Lucey](https://www.tcd.ie/business/people/faculty-professors/blucey/), and [Jalaj Pathak](https://www.iiml.ac.in/faculty-data?n=MTM2)"
 alphabetical: true
-citation: "Dixit, A., S.Jain, B.Lucey, and J.Pathak. 2026. “Energy-Related Discussion in Fed Speeches and Options-Implied Equity Risk Premium.” Journal of Futures Markets 46: 719–737. https://doi.org/10.1002/fut.70078."
+citation: "Dixit, A., Jain, S., Lucey, B., and Pathak, J. 2026. “Energy-Related Discussion in Fed Speeches and Options-Implied Equity Risk Premium.” Journal of Futures Markets 46: 719–737. https://doi.org/10.1002/fut.70078."
 paperurl: "https://doi.org/10.1002/fut.70078"
 ---
 
