@@ -52,7 +52,7 @@
 
       {% unless post.category == 'working' %}
         {% if post.venue and post.date %}
-          <p class="paper-venue">{{ post.venue }}, {{ post.date | date: "%Y" }}</p>
+          <p class="paper-venue">{% if post.category == 'manuscripts' and post.paperurl != '' %}<a href="{{ post.paperurl }}">{{ post.venue }}</a>{% else %}{{ post.venue }}{% endif %}, {{ post.date | date: "%Y" }}</p>
         {% elsif post.venue %}
           <p class="paper-venue">{{ post.venue }}</p>
         {% endif %}
